@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+       <meta charset="UTF-08">
+       <title>Registration Form</title>
+       <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+       <h1>Registration Form</h1>
+       <p>Enter your registration information below</p>
+       <form method="post" action="'https://register-demo.freecodecamp.org'">
+
+        <fieldset>
+           <label for="fisrt-name">First Name: <input id="first-name" type="text" required></input></label>
+           <label for="last-name">Last Name: <input id="last-name" type="text" required></input> </label>
+           <label for="DOB">Date of Birth: <input id="DOB" type="date" required></input></label>
+           <label for="email">Email: <input id="email" type="email" required></input></label>
+           <label for="phone number">Phone Number: <input id="phone number" type="number" required  pattern="[a-z0-5]{8,}"></input></label>
+           <label>Gender: <input type="radio" name="gender" value="male"> Male
+               <input type="radio" name="gender" value="female"> Female</label>
+           <label><input type="checkbox" required> I accept the terms and conditions</label>
+        </fieldset>
+
+        <fieldset>
+           <label for="profile-picture"><input id="profile-picture" type="file">Upload a profile picture</label>
+           <label for="resume"><input id="resume" type="file">Upload your resume</label>
+           <label for="age">Input your age: <input id="age" min="18" max="22" type="number"></label>
+           <label for="referrer">How did you hear about us?
+           <select id="referrer">
+               <option value="">(select one)</option>
+               <option value="1"></option>
+               <option value="2"></option>
+               <option value="3"></option>
+               <option value="4">Other</option>
+           </select>
+           </label>
+           <label for="expectations">  What are your expectations after joing this program?
+               <textarea id="expectations" rows="3" cols="30" placeholder="My expectations after joining this program is to learn from the industrial experts..."></textarea>
+           </label>
+        </fieldset>
+
+        <fieldset></fieldset>
+        <input type="submit" value="Submit">
+       </form>
+  </body>
+</html>
